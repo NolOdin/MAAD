@@ -1,0 +1,12 @@
+
+i.fas.fa-shopping-cart {
+	color: gray ;
+}
+a.nav-link {
+	color: gray;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #c98d00;
+}

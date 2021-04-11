@@ -1,5 +1,5 @@
 import React ,{Component} from 'react';
-import Header from './pages/header';
+import Header from './components/header';
 export default class App extends Component {
 render() {
 

@@ -1,12 +1,10 @@
-import React, { Component } from "react";
-import { Media, Container, Row, Col, Card, ListGroup } from 'react-bootstrap';
+import { Media, Row, Col, Card, ListGroup, Container } from 'react-bootstrap';
 
 
-export default class Itemss extends Component {
-	render() {
+const Itemss = function() {
 		return (
-			<Container className="p-5">
-				<Row>
+	 <Container>
+				<Row className="pt-5">
 					<Col md="9">
 						<Media className="m-5">
 							<img
@@ -106,8 +104,10 @@ export default class Itemss extends Component {
 							</Card.Body>
 						</Card>
 					</Col>
+						
 				</Row>
 			</Container>
 		)
-	}
 }
+
+export default Itemss;

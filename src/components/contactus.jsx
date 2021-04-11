@@ -1,11 +1,9 @@
-import React, {Component} from "react";
 import {Form, Button, Container } from "react-bootstrap";
 
-export default class ContactUs extends Component {
-	render(){
+const ContactUs = function() {
 	return(
-	<Container style={{width:"500px"}}>
-		<h1 className="text-center">Contact us</h1>
+	<Container className="pt-5" style={{width:"500px"}}>
+		<h1 className="text-center p-5">Contact us</h1>
 		<Form>
 			<Form.Group contralId="formBasicEmail">
 				<Form.Label>Email addres</Form.Label>
@@ -26,5 +24,6 @@ export default class ContactUs extends Component {
 		</Form>
 	</Container>
 	)
-	}
 }
+
+export default ContactUs;

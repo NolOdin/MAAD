@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
-import CarouselBox from './carouselbox/carouselbox.js';
+import React from 'react';
+import CarouselBox from './carouselbox/carouselbox';
 import { Container, CardDeck, Card, Button } from "react-bootstrap";
 
-export default class Home extends Component {
-	render() {
+const Home = function() {
 		return (
 			<>
 				<CarouselBox />
@@ -56,5 +55,5 @@ export default class Home extends Component {
 				</Container>
 			</>
 		)
-	}
 }
+export default Home;

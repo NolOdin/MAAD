@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, FormControl, Container, Form, Button } from 'react-bootstrap';
-import logo from "../assets/logo1.png";
+import logo from "../assets/SS-LOGO.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from "./home.js";
-import About from "./about.js";
-import Itemss from "./items.js";
-import Books from "./books.js";
-import ContactUs from "./contactus.js";
+import Home from "./home.jsx";
+import About from "./about.jsx";
+import Itemss from "./items.jsx";
+import Books from "../containers/books.js";
+import ContactUs from "./contactus.jsx";
+import Cart from '../containers/cart.js';
+import MenuProfile from './menu-profile.jsx'
+import './header.css'
 
 export default class Header extends Component {
 	render() {
@@ -17,8 +20,8 @@ export default class Header extends Component {
 					<Container>
 						<Navbar.Brand href="/">
 							<img src={logo}
-								height="50"
-								width="145"
+								height="40"
+								width="70"
 								className="d-inline-block align-top"
 								alt=""
 							/>
@@ -34,16 +37,8 @@ export default class Header extends Component {
 
 
 							</Nav>
-							<Form inline>
-								<FormControl
-									type="text"
-									placeholder="Type to search"
-									className="mr-sm-2"
-								/>
-								<Button variant="outline-info">Search</Button>
-							</Form>
-
-
+							<MenuProfile />
+							<Cart className="pr-5" />
 
 						</Navbar.Collapse>
 

@@ -1,0 +1,10 @@
+h3 {
+	position: relative;
+}
+button#delete_from_cart.btn.btn-primary {
+	background: tomato;
+}
+
+button#buy_item.btn.btn-primary {
+	background: #c98d00;
+}

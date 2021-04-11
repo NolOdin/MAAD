@@ -1,14 +1,11 @@
-import React, { Component } from 'react';
 import { Container, CardDeck, Card, Button } from "react-bootstrap";
-import LogoM from "../assets/ITS LOGO.png"
+import LogoM from "../assets/F-LOGO-NEW.png"
 
-export default class About extends Component {
-	render() {
+const About = function() {
 		return (
 
 			<Container className="p-5 w-50">
-				<h2 className="text-center m-4">О MAAD</h2>
-				<CardDeck>
+				<CardDeck className="pt-4">
 					<Card>
 						<Card.Img
 							variant="top"
@@ -27,5 +24,6 @@ export default class About extends Component {
 			</Container>
 
 		)
-	}
 }
+
+export default About;

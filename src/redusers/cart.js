@@ -1,21 +1,23 @@
 const initialState = {
-	isReady: false,
-    items: null,
-    
+    items: [
+  
+    ]
 }
 
 export default (state = initialState, action) => {
 	switch(action.type){
-		case 'SET_BOOKS':
+		case 'ADD_TO_CART':
 		return {
-			...state, 
-			items: action.payload,
-			isReady: true
+			...state,
+			 items: [
+				...state.items,
+				action.payload
+			] 
 		};
-		case 'SET_IS_READY':
+		case 'REMOVE_FROM_CART':
          return {
             ...state,
-            isReady: action.payload
+           items: state.items.filter(o => o.id != action.payload)
         };
         break;	
       default:
