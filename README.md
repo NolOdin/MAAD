@@ -12,4 +12,6 @@
 
 
 Запуск приложения делается в корневом каталоге проекта с помощью команды: npm start
+
+![Hnet-image](https://user-images.githubusercontent.com/76630229/144639746-037cfc48-e637-4825-9c2d-4091fbcfa198.gif)
  
