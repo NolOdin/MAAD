@@ -15,10 +15,10 @@ const Filter = function({setFilter, filterBy, searchQuery, setSearchQuery }) {
           <NavLink href="#" onClick={setFilter.bind(this, 'all' )} eventKey="all">Все</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="#" onClick={setFilter.bind(this, 'price_high' )} eventKey="cheap">Дешевые</NavLink>
+          <NavLink href="#" onClick={setFilter.bind(this, 'price_high' )} eventKey="cheap">Дорогие</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="#" onClick={setFilter.bind(this, 'price_low' )} eventKey="rich">Дорогие</NavLink>
+          <NavLink href="#" onClick={setFilter.bind(this, 'price_low' )} eventKey="rich">Недорогие</NavLink>
         </NavItem>
         <NavItem>
           <NavLink href="#" onClick={setFilter.bind(this, 'author' )} eventKey="author">Автор</NavLink>
